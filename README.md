@@ -5,7 +5,7 @@
 using namespace std;
 using namespace chrono;
 
-// Function to count divisors using a simple approach
+
 int divisors(long long n) {
     int count = 0;
     for (long long i = 1; i <= n; ++i) {
@@ -14,7 +14,6 @@ int divisors(long long n) {
     return count;
 }
 
-// Function to measure execution time of divisors function
 void measure_time(long long n) {
     auto start = high_resolution_clock::now();  // Start timer
     divisors(n);  // Execute divisors function
